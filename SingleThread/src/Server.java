@@ -4,10 +4,11 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.UnknownHostException;
 
 public class Server {
 
-    public void run() throws IOException {
+    public void run() throws IOException, UnknownHostException {
         int port = 8010;
         ServerSocket socket = new ServerSocket(port);
         socket.setSoTimeout(20000);
@@ -24,9 +25,9 @@ public class Server {
 
     public static void main(String[] args) {
         Server server = new Server();
-        try{
+        try {
             server.run();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
