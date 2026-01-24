@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Java_MultiThreaded_Web-Server.iml" filepath="$PROJECT_DIR$/.idea/Java_MultiThreaded_Web-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThread/MultiThread.iml" filepath="$PROJECT_DIR$/MultiThread/MultiThread.iml" />
       <module fileurl="file://$PROJECT_DIR$/SingleThread/SingleThread.iml" filepath="$PROJECT_DIR$/SingleThread/SingleThread.iml" />
     </modules>
   </component>
