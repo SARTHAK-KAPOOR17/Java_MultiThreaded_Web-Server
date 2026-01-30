@@ -15,14 +15,14 @@ public class Server {
         while(true) {
             try {
                 System.out.println("Server is listening on port " + port);
-                Socket accetedConnection = socket.accept();
-                System.out.println("Connected to " + accetedConnection.getRemoteSocketAddress());
-                PrintWriter toClient = new PrintWriter(accetedConnection.getOutputStream(), true);
-                BufferedReader fromClient = new BufferedReader(new InputStreamReader(accetedConnection.getInputStream()));
+                Socket acceptedConnection = socket.accept();
+                System.out.println("Connected to " + acceptedConnection.getRemoteSocketAddress());
+                PrintWriter toClient = new PrintWriter(acceptedConnection.getOutputStream(), true);
+                BufferedReader fromClient = new BufferedReader(new InputStreamReader(acceptedConnection.getInputStream()));
                 toClient.println("Hello World From Server!!");
                 toClient.close();
                 fromClient.close();
-                accetedConnection.close();
+                acceptedConnection.close();
             } catch (IOException ex){
                 ex.printStackTrace();
             }
